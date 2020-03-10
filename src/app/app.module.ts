@@ -7,7 +7,7 @@ import { SenasteArtiklarComponent } from './senaste-artiklar/senaste-artiklar.co
 import { AllaComponent } from './alla/alla.component';
 import { LoggaInComponent } from './logga-in/logga-in.component';
 import { AddArtikelComponent } from './add-artikel/add-artikel.component';
-
+import { FormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
@@ -19,7 +19,8 @@ import { AddArtikelComponent } from './add-artikel/add-artikel.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

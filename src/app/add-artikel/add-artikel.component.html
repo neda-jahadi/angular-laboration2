@@ -1,1 +1,68 @@
-<p>add-artikel works!</p>
+<div>
+	<form #newArticleForm="ngForm">
+
+		<div class="form-group">
+			<label>Article title</label>
+			<div class="form-row">
+				<input type="text"
+					required
+					[(ngModel)]="model.title" name="title"
+					#title="ngModel" />
+				<div>
+					<div *ngIf="title.errors?.required" class="error-message">
+						Enter a title
+					</div>
+				</div>
+			</div>
+        </div>
+        
+        <div class="form-group">
+			<label>Article content</label>
+			<div class="form-row">
+				<input type="text"
+					required
+					[(ngModel)]="model.content" name="content"
+					#content="ngModel" />
+				<div>
+					<div *ngIf="content.errors?.required" class="error-message">
+						Enter a content
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="form-group">
+			<label>How many hours to read</label>
+			<div class="form-row">
+				<input type="text"
+					required maxlength="2"
+					[(ngModel)]="model.time" name="time"
+					#time="ngModel" />
+				<div>
+					<div *ngIf="time.errors?.required" class="error-message">
+						Enter a number 
+					</div>
+				</div>
+				{{ time.errors | json }}
+			</div>
+		</div>
+
+		<div class="form-group">
+			<label >Author (optional)</label>
+			<input type="text"
+				[(ngModel)]="model.author" name="author"
+				#author="ngModel" />
+		</div>
+
+		
+
+		<button [disabled]="newArticleForm.invalid" (click)="submit()">Submit!</button>
+
+
+
+		<br />
+		{{ diagnostic }}
+	</form>
+</div>
+
+ 
