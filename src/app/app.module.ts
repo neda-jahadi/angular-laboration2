@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { StartsidanComponent } from './startsidan/startsidan.component';
 import { SenasteArtiklarComponent } from './senaste-artiklar/senaste-artiklar.component';
@@ -18,7 +18,8 @@ import { AddArtikelComponent } from './add-artikel/add-artikel.component';
     AddArtikelComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
