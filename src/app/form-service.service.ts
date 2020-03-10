@@ -13,8 +13,10 @@ export class FormServiceService {
   getArtikleList(): ArtikleInfo[] {
 		return this.artikleList;
   }
-  getListAvTitles():any {
-    return this.artikleList;
+  
+  addNewArticle(element: any): void {
+    this.artikleList.push(element);
+    console.log('new article');
   }
   constructor() { }
 }

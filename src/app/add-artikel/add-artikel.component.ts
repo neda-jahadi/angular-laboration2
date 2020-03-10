@@ -10,14 +10,17 @@ export class AddArtikelComponent implements OnInit {
   //myArticle;
   model: ArtikleInfo;
   submit(): void {
-    //this.formService.addNewArticle();
+    this.formService.addNewArticle(this.model);
   }
   constructor(public formService: FormServiceService) { }
 
   ngOnInit(): void {
     this.model = new ArtikleInfo('newTitle', 'newContent', 2, 'newAuthor');
+    console.log(this.model);
   }
 
   //this.myArticle=JSON.stringify(this.model);
-  get diagnostic() { return JSON.stringify(this.model); }
+  get diagnostic() { 
+    
+    return JSON.stringify(this.model); }
 }
