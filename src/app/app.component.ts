@@ -6,6 +6,10 @@ import { CommunicationService } from './communication.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  isLoggdIn= false;
   title = 'lab2';
   constructor(private communicationService: CommunicationService) { }
+  ngOnInit(): void {
+    this.communicationService.observableSource.subscribe(logstatus => this.isLoggdIn= logstatus);
+  }
 }

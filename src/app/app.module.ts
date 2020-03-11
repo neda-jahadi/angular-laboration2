@@ -8,6 +8,7 @@ import { AllaComponent } from './alla/alla.component';
 import { LoggaInComponent } from './logga-in/logga-in.component';
 import { AddArtikelComponent } from './add-artikel/add-artikel.component';
 import { FormsModule } from '@angular/forms';
+import { DeleteArticleComponent } from './delete-article/delete-article.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -15,7 +16,8 @@ import { FormsModule } from '@angular/forms';
     SenasteArtiklarComponent,
     AllaComponent,
     LoggaInComponent,
-    AddArtikelComponent
+    AddArtikelComponent,
+    DeleteArticleComponent
   ],
   imports: [
     BrowserModule,

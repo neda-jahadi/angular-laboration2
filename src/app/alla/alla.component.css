@@ -1,0 +1,8 @@
+.titleRow {
+    border: 1px solid violet;
+    padding: 1em;
+    margin: 1em;
+    border-radius: 5px;
+    background-color: lightpink;
+    width: 30%;
+}

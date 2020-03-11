@@ -1,7 +1,8 @@
-<p *ngIf="!isLoggdIn"> Är det säkert att det är du som är bloggaren? </p>
+<div *ngIf="!isLoggdIn" >
+<p > Är det säkert att det är du som är bloggaren? </p>
 <button (click)="authorized()"> Ja, det är jag</button>
+</div>
 
-
-<p *ngIf="isLoggdIn">Klicka här om du vill logga ut
-    <button></button>
+<p *ngIf="isLoggdIn">
+    <button (click)="unAuthorized()">Klicka här om du vill logga ut</button>
 </p>

@@ -4,7 +4,7 @@
         <a routerLink="/alla" routerLinkActive="active">Alla artiklar</a>
         <a routerLink="/senaste-artiklar" routerLinkActive="active">Senaste artiklar</a>
         <a routerLink="/logga-in" routerLinkActive="active">Logga in</a>
-        <a routerLink="/add-artikel" routerLinkActive="active" >Add new artiklar</a> 
+        <a routerLink="/add-artikel" routerLinkActive="active" *ngIf="isLoggdIn">Add new artiklar</a> 
      </nav>
 </header>
  
