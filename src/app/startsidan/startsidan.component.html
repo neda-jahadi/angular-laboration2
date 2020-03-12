@@ -1,13 +1,17 @@
 <div class="senaste-box">
 <h2>Den senaste artikeln</h2>
-<h4>Title: {{senaste.title}}</h4>
-<p>Innehållet:</p>
-<div class="content">
+<hr>
+<div>
+    <h4>Title: {{senaste.title}}</h4>
+</div>
 
-    <div>{{senaste.content}}</div>
+
+<div >
+    <span style="font-weight: bold;">Innehållet:</span>
+    <div class="content">{{senaste.content}}</div>
 </div>
 
 <div>Det tar {{senaste.time}} minuter</div>
-<div>Författare: {{senaste.author}}</div>
+<div >Författare: {{senaste.author}}</div>
 
 </div>

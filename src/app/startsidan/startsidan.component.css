@@ -10,4 +10,11 @@
     width: 50%;
     height: 6em;
     padding-left: 1em;
+    font-weight: lighter;
+    font-style: italic;
+    
+}
+div {
+    font-weight: bold;
+    
 }
