@@ -9,6 +9,7 @@ import {CommunicationService} from '../communication.service'
 })
 export class AllaComponent implements OnInit {
   isLoggdIn: boolean= false;
+  //senasteList: ArtikleInfo[]=[];
   articleList: ArtikleInfo[] = [];
   deleteHere(text: object): void{
     this.formService.deleteArticle(text);
@@ -23,6 +24,7 @@ export class AllaComponent implements OnInit {
   ngOnInit(): void {
     this.articleList = this.formService.getArtikleList();
     this.communicationService.observableSource.subscribe(logstatus => this.isLoggdIn= logstatus);
+   // this.senasteList = this.formService.getSenaste();
   }
 
 }

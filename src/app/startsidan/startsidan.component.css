@@ -1,0 +1,13 @@
+.senaste-box {
+    border: 1px solid green;
+    background-color: lightgreen;
+    padding: 1em;
+    margin: 1em;
+}
+.content {
+    border: 1px solid green;
+    background-color: lightseagreen;
+    width: 50%;
+    height: 6em;
+    padding-left: 1em;
+}

@@ -9,12 +9,12 @@ import { FormServiceService } from '../form-service.service';
 })
 export class StartsidanComponent implements OnInit {
   articleList: ArtikleInfo[] = [];
-  senaste: object;
+  senaste: ArtikleInfo;
   constructor(public formService: FormServiceService) { }
 
   ngOnInit(): void {
     this.articleList = this.formService.getArtikleList();
-     this.senaste=this.articleList[0]
+     this.senaste=this.articleList[0];
   }
 
 }

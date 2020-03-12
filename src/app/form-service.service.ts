@@ -15,8 +15,12 @@ export class FormServiceService {
     { title: 'title7', content:'content7', time: 7, author:'author7' }
   ];
   listLength: number = this.artikleList.length;
-  
-  
+  senasteArtiklar: ArtikleInfo[]=[];
+  getSenaste(): ArtikleInfo[] {
+    this.senasteArtiklar=[];
+    for(let i=0; i<5; i++){this.senasteArtiklar.push(this.artikleList[i])}
+    return this.senasteArtiklar;
+  }
   getArtikleList(): ArtikleInfo[] {
 		return this.artikleList;
   }
