@@ -2,9 +2,9 @@
 
 <div class="titleRow" *ngFor="let article of articleList"> 
     {{article.title}}
-    <div>
-        <button  (click)="deleteHere(article)">Delete here!</button>
-    </div>
+    
+    <button  *ngIf='isLoggdIn' (click)="deleteHere(article)">Delete!</button>
+    
     
     
     

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ArtikleInfo } from '../artikle-info';
 import { FormServiceService } from '../form-service.service';
+import {CommunicationService} from '../communication.service'
 @Component({
   selector: 'app-alla',
   templateUrl: './alla.component.html',
@@ -15,10 +16,13 @@ export class AllaComponent implements OnInit {
   }
  
   
-  constructor(public formService: FormServiceService) { }
+  constructor(
+    public formService: FormServiceService,
+    public communicationService: CommunicationService) { }
 
   ngOnInit(): void {
     this.articleList = this.formService.getArtikleList();
+    this.communicationService.observableSource.subscribe(logstatus => this.isLoggdIn= logstatus);
   }
 
 }
