@@ -15,7 +15,8 @@ export class AddArtikelComponent implements OnInit {
   constructor(public formService: FormServiceService) { }
 
   ngOnInit(): void {
-    this.model = new ArtikleInfo('newTitle', 'newContent', 2, 'newAuthor');
+    this.model = new ArtikleInfo('ARDS strategy tested', 'On January 28, three additional employees at the company tested positive for 2019-nCoV (Patients 2 through 4 in Figure 1). Of these patients, only Patient 2 had contact with the index patient; ', 
+    20, 'L.Barrot');
     console.log(this.model);
   }
 
