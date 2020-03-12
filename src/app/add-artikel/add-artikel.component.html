@@ -19,10 +19,10 @@
         <div class="form-group">
 			<label>Article content</label>
 			<div class="form-row">
-				<input type="text"
+				<textarea  class='content' type="text" rows="8"
 					required
 					[(ngModel)]="model.content" name="content"
-					#content="ngModel" />
+					#content="ngModel"></textarea>
 				<div>
 					<div *ngIf="content.errors?.required" class="error-message">
 						Enter a content
