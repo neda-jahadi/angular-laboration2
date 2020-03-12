@@ -5,6 +5,7 @@ import { SenasteArtiklarComponent } from './senaste-artiklar/senaste-artiklar.co
 import { LoggaInComponent } from './logga-in/logga-in.component';
 import { AddArtikelComponent } from './add-artikel/add-artikel.component';
 import { AllaComponent } from './alla/alla.component';
+import {PageNotFoundComponent} from './page-not-found/page-not-found.component';
 const routes: Routes = [
 	
 	{ path: 'startsidan', component: StartsidanComponent, pathMatch: 'full' },	
@@ -12,7 +13,8 @@ const routes: Routes = [
 
     { path: 'logga-in', component: LoggaInComponent, pathMatch: 'full' },
     { path: 'add-artikel', component: AddArtikelComponent, pathMatch: 'full' },
-    { path: 'alla', component: AllaComponent, pathMatch: 'full' }
+	{ path: 'alla', component: AllaComponent, pathMatch: 'full' },  
+	{ path: '**', component: PageNotFoundComponent }
 ];
 
 @NgModule({

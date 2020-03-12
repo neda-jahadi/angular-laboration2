@@ -1,9 +1,10 @@
 @import url('https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css');
 
-header {
+header,footer {
     
     margin: 1em;
     border: 1px solid lightblue;
+    border-radius: 5px;
     background-color: lightblue;
     padding: 1em;
 }
@@ -18,3 +19,21 @@ nav a.active {
 	background-color: #9c1fa9;
 	color: white;
 }
+footer {
+    height: 7em;
+    
+}
+.grid {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+    
+    
+  }
+  .grid > div{
+      
+      
+      text-align: center;
+  }
+  
+  

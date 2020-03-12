@@ -9,6 +9,7 @@ import { LoggaInComponent } from './logga-in/logga-in.component';
 import { AddArtikelComponent } from './add-artikel/add-artikel.component';
 import { FormsModule } from '@angular/forms';
 import { DeleteArticleComponent } from './delete-article/delete-article.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -17,7 +18,8 @@ import { DeleteArticleComponent } from './delete-article/delete-article.componen
     AllaComponent,
     LoggaInComponent,
     AddArtikelComponent,
-    DeleteArticleComponent
+    DeleteArticleComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,

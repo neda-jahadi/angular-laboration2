@@ -22,13 +22,20 @@ export class FormServiceService {
     { title: 'The promises and limitations', content:'Recent stories chart the rise of big data, its impact on business, and how it affects our lives every day.', 
     time: 21, author:'Sean Silverthorne' }
   ];
+  
   listLength: number = this.artikleList.length;
   senasteArtiklar: ArtikleInfo[]=[];
   getSenaste(): ArtikleInfo[] {
     this.senasteArtiklar=[];
     for(let i=0; i<5; i++){this.senasteArtiklar.push(this.artikleList[i])}
     return this.senasteArtiklar;
+    
   }
+  //femSenaste: ArtikleInfo[]= this.getSenaste();
+  //senasteMedPreview() : ArtikleInfo[]{
+     //for(let i=0; i<this.femSenaste.length; i++){this.femSenaste[i].content=this.femSenaste[i].content.substring(0,70)}
+    // return this.femSenaste;
+ // }
   getArtikleList(): ArtikleInfo[] {
 		return this.artikleList;
   }

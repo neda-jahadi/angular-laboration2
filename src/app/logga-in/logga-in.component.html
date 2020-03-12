@@ -1,8 +1,10 @@
-<div *ngIf="!isLoggdIn" >
-<p > Är det säkert att det är du som är bloggaren? </p>
-<button (click)="authorized()"> Ja, det är jag</button>
+<div class='login-box'>
+    <div *ngIf="!isLoggdIn" >
+        <h3 > Är det säkert att det är du som är bloggaren? </h3>
+        <button (click)="authorized()"> Ja, det är jag</button>
+        </div>
+        
+        <p *ngIf="isLoggdIn">
+            <button (click)="unAuthorized()">Klicka här om du vill logga ut</button>
+        </p>
 </div>
-
-<p *ngIf="isLoggdIn">
-    <button (click)="unAuthorized()">Klicka här om du vill logga ut</button>
-</p>

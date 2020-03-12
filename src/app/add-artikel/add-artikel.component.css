@@ -1,5 +1,15 @@
 @import url('https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css');
 
+.add-box {
+	padding: 1em;
+}
+button {
+	padding: 1em;
+	width: 50%;
+	border-radius: 5px;
+	
+}
+	
 .form-group {
 	border: 1px solid lightgray;
 	border-radius: 0.3em;
@@ -19,7 +29,7 @@
 
 
 input {
-	
+	border-radius: 5px;
 	border-left-width: 5px;
 	display: block;
 }
@@ -33,7 +43,7 @@ label {display: block;}
 	line-height: 1.2em;
 }
 
-/* Example: coloring the left border to indicate validity */
+
 input.ng-touched { border-left: 5px solid orange; }
 
 .ng-valid[required], .ng-valid.required {
