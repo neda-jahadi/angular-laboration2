@@ -54,9 +54,11 @@
 				#author="ngModel" />
 		</div>
 
+		<div class="button">
+			<button [disabled]="newArticleForm.invalid" (click)="submit()">Submit!</button>
+		</div>
+         
 		
-
-		<button [disabled]="newArticleForm.invalid" (click)="submit()">Submit!</button>
 
 
 
