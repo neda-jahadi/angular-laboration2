@@ -1,1 +1,6 @@
-<p>senaste-artiklar works!</p>
+<div class="list" *ngFor="let article of articleList">
+	{{article.title}}
+	<p>{{article.content}}</p>
+	<p>Time: {{article.time}}</p>
+	<p>Author: {{article.author}}</p>
+</div>
