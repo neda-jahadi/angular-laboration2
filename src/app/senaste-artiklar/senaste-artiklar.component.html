@@ -1,6 +1,7 @@
 <div class="list" *ngFor="let article of articleList">
-	{{article.title}}
-	<p>{{article.content}}</p>
-	<p>Time: {{article.time}}</p>
-	<p>Author: {{article.author}}</p>
+	<h3>{{article.title}}</h3>
+	<hr>
+	<p style="font-style: italic;">{{article.content}}...</p>
+	<p>Tid: {{article.time}} minuter</p>
+	<p>Författare: {{article.author}}</p>
 </div>

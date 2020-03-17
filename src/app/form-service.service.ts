@@ -30,13 +30,10 @@ export class FormServiceService {
 	{
     let senasteArtiklar=[];
     senasteArtiklar = this.artikleList.slice(0, 5);
-		//for(let i=0; i<5; i++)
-		//{
-		//	senasteArtiklar.push(this.[i])
-		//}
+		
 		senasteArtiklar = senasteArtiklar.map(article => ({
 			title: article.title,
-			content: article.content.substring(0, 30),
+			content: article.content.substring(0, 70),
 			author: article.author,
 			time: article.time
 		}));
