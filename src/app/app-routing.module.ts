@@ -14,6 +14,7 @@ const routes: Routes = [
     { path: 'logga-in', component: LoggaInComponent, pathMatch: 'full' },
     { path: 'add-artikel', component: AddArtikelComponent, pathMatch: 'full' },
 	{ path: 'alla', component: AllaComponent, pathMatch: 'full' },  
+	{ path: 'login', redirectTo: '/logga-in' },
 	{ path: '**', component: PageNotFoundComponent }
 ];
 
